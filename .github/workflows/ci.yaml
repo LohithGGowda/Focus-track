@@ -49,6 +49,6 @@ jobs:
     needs: test
 
     steps:
-      -name: its up to the deployment 
+      - name: its up to the deployment 
         run: echo "deployment steps will be added here"
              
