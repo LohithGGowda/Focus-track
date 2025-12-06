@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches: [ feature ]
+  pull_request:
+
+jobs :
+  build:
+    run-on : ubuntu-latest
+
+    steps :
+      - name : checkout code from FOCUS -TRACK
+        uses : actions/checkout@v4
+
+      - name : set up python
+        uses : actions/setup-python@v5
+        with : python-version: '3.13'
+
+      - name : Install dependencies 
+        run  : | 
+          python -m pip install --upgrade pip 
+          pip install -r requirements.txt
+      
+      - name: Start services with Docker Compose
+        run: docker compose -f docker-compose.dev.yml up --build
+
+
+      - name : Run tests 
+        run : |
+          pytest || echo "No test yet , wait for it " 

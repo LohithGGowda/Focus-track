@@ -1,0 +1,97 @@
+# Git / IDE
+.git
+.gitignore
+.gitattributes
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+ehthumbs.db
+
+# Logs / temp
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+tmp/
+temp/
+*.tmp
+*.cache
+.cache/
+
+# Node
+node_modules/
+.eslintcache
+.npm/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+instance/
+
+# Java / JVM
+target/
+*.class
+*.jar
+*.war
+
+# Go / binaries
+bin/
+*.exe
+*.dll
+*.so
+*.out
+
+# Build / dist artifacts
+build/
+dist/
+out/
+coverage/
+.terraform/
+!.github/
+
+# Framework specific caches
+.next/
+.nuxt/
+.public/
+.storybook/
+.meteor/
+
+# CI / tooling
+.cache-loader
+.pytest_cache/
+.mypy_cache/
+
+# Packages / credentials / secrets
+.env
+.env.*
+secrets.env
+*.pem
+*.key
+*.crt
+*.p12
+id_rsa
+id_rsa.pub
+credentials
+aws_credentials
+*.asc
+
+# Database
+selections.db
+
+# Misc
+.Dockerfile.swp
+*.swp
