@@ -28,7 +28,7 @@ jobs:
 
 
   test:
-    runs on: ubuntu-latest
+    runs-on: ubuntu-latest
     needs: built
 
     steps: 
@@ -45,7 +45,7 @@ jobs:
           docker compose -f docker-compose.dev.yml down
 
   deploy:
-    runs on: ubuntu-latest
+    runs-on: ubuntu-latest
     needs: test
 
     steps:
