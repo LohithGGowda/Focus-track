@@ -1,0 +1,12 @@
+services:
+  flask-api:
+    container_name: focus-container
+    build: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app  # Live code changes!
+      - ./instance/selections.db:/app/instance/selections.db
+    environment:
+      - FLASK_APP=mainrun.py
+      - FLASK_ENV=development
