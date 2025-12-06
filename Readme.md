@@ -7,6 +7,10 @@ Simple Flask-based MVP for tracking "card" selections and user entries (minimal 
 - Minimal REST endpoints to add/list cards and submit entries.
 - Designed as an MVP that can be extended with scheduling, analytics, and a frontend.
 
+
+**Current state**
+     [![CI](https://github.com/LohithGGowda/Focus-track/actions/workflows/ci.yaml/badge.svg?event=status)](https://github.com/LohithGGowda/Focus-track/actions/workflows/ci.yaml)
+
 **Quick Summary**
 - Backend: `Flask` (entrypoint: `mainrun.py`)
 - ORM: `Flask-SQLAlchemy` (models in `models.py`)
