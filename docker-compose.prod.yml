@@ -9,5 +9,6 @@ services:
       - ./instance/selections.db:/app/selections.db
     environment:
       - FLASK_ENV=development
+      
 
   # Later: nicegui, streamlit

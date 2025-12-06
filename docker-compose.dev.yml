@@ -10,3 +10,4 @@ services:
     environment:
       - FLASK_APP=mainrun.py
       - FLASK_ENV=development
+      
