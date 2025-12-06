@@ -1,0 +1,16 @@
+# Python / Flask
+*.pyc
+__pycache__/
+.venv/
+venv/
+
+# Flask instance data (includes your SQLite DB if under instance/)
+instance/
+
+# Local SQLite DB in project root (adjust path if needed)
+~/instance/selections.db
+
+# Docker / environment files
+.env
+*.log
+__pycache__/
