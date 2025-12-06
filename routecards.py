@@ -1,20 +1,13 @@
 from flask import Blueprint, request, jsonify
 from models import db,card,entries
 
-
-basercheck = Blueprint('basercheck', __name__)
-@basercheck.route('/')
-
-def bcheck():
-    return jsonify({"message": "up and running base page"}), 201
-
 card_routes = Blueprint('card_routes',__name__)
 @card_routes.route('/add_card', methods = ['POST'])
 
 def add_card():
     card_name = request.json.get('name')
     if not card_name:
-        return jsonify({"error": "Card name is required"}),400
+        return jsonify({"error": "Card name is required"}),400  # input is null
     
     existing_card = card.query.filter_by(card_name=card_name).first()
     if existing_card :

@@ -1,6 +1,6 @@
 from flask import Flask
 from models import db,card,entries
-from routecards import card_routes, basercheck  # projects routes file or blueprint
+from routecards import card_routes # projects routes file or blueprint
 import os
 
 app = Flask(__name__)
@@ -16,4 +16,4 @@ with app.app_context():
     print("Database tables created (or already exist) within the app context.")
 
 if __name__ == '__main__':
-    app.run(debug=True)       
+    app.run(host="0.0.0.0", port=5000, debug=True)  # ok for local dev
