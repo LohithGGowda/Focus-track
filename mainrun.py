@@ -1,5 +1,5 @@
 from flask import Flask
-from models import db,card,entries
+from models import db
 from routecards import card_routes # projects routes file or blueprint
 import os
 
