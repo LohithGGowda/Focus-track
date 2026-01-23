@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Focus Track - Task Tracking MVP</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+            padding: 60px 40px;
+            max-width: 600px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+
+        .features {
+            text-align: left;
+            margin: 40px 0;
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        .feature {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            font-size: 1em;
+            color: #333;
+        }
+
+        .feature-icon {
+            width: 30px;
+            height: 30px;
+            background: #667eea;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            font-size: 1em;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: #f8f9fa;
+            color: #667eea;
+            border: 2px solid #667eea;
+        }
+
+        .btn-secondary:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .api-docs {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 2px solid #e9ecef;
+        }
+
+        .api-docs h3 {
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .api-endpoint {
+            background: #f8f9fa;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 4px solid #667eea;
+            text-align: left;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            overflow-x: auto;
+        }
+
+        .endpoint-method {
+            color: #667eea;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Focus Track</h1>
+        <p class="subtitle">Simple Task Tracking MVP for Your Productivity</p>
+
+        <div class="features">
+            <div class="feature">
+                <div class="feature-icon">✓</div>
+                <div>Create and manage task cards</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">✓</div>
+                <div>Track entries with timestamps</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">✓</div>
+                <div>Lightweight and fast</div>
+            </div>
+            <div class="feature">
+                <div class="feature-icon">✓</div>
+                <div>RESTful API endpoints</div>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <a href="/cards/" class="btn btn-primary">View Cards Dashboard</a>
+            <a href="https://github.com/LohithGGowda/Focus-track" class="btn btn-secondary" target="_blank">View on GitHub</a>
+        </div>
+
+        <div class="api-docs">
+            <h3>📚 API Documentation</h3>
+            <div class="api-endpoint">
+                <span class="endpoint-method">GET</span> /cards
+            </div>
+            <div class="api-endpoint">
+                <span class="endpoint-method">POST</span> /add_card
+            </div>
+            <div class="api-endpoint">
+                <span class="endpoint-method">POST</span> /add_entry
+            </div>
+        </div>
+    </div>
+</body>
+</html>
